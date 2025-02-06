@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #text {
+            display: none;
+            margin-top: 10px;
+            font-size: 24px;
+        }
+    </style>
+    <title>Interactive Text Example</title>
+</head>
+<body>
+    <div class="container">
+        <button id="button" onclick="showText()">Hey August</button>
+        <p id="text">Thank you for the orgasems</p>
+    </div>
+
+    <script>
+        function showText() {
+            const textElement = document.getElementById('text');
+            const buttonElement = document.getElementById('button');
+
+            textElement.style.display = 'block';
+            buttonElement.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
